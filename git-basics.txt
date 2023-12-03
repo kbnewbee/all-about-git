@@ -5,3 +5,18 @@ ls -a
 
 // create a new text file
 touch names.txt
+
+// stage a file to make commit
+git add names.txt
+
+// to unstage a file which was earlier staged to commit
+git restore --staged names.txt
+
+// to check status
+git status
+
+// commit new delta changes with a commit message 
+git commit -m"names.txt file is changed"
+
+//
+
