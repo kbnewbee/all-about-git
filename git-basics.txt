@@ -18,5 +18,16 @@ git status
 // commit new delta changes with a commit message 
 git commit -m"names.txt file is changed"
 
-//
+// to check commit history
+git log
+
+// to make a store the current uncommited changes at the backstage
+// will have a clean directory to work on without making commits
+git stash
+
+// if want to bring back stash changes
+git stash pop
+
+
+
 
