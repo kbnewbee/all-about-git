@@ -39,4 +39,14 @@ git remote -v
 // git push <dest url> <local src branch>
 git push origin master 
 
+// create a new branch with name feature
+git branch feature
+
+// to move to the feature branch
+git checkout feature
+
+
+
+
+
 
