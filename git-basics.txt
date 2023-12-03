@@ -1,0 +1,7 @@
+All about Git
+
+// list hidden files
+ls -a
+
+// create a new text file
+touch names.txt
