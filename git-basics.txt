@@ -28,6 +28,15 @@ git stash
 // if want to bring back stash changes
 git stash pop
 
+// attach remote github repository url with local repository
+// origin is the name given to the url - just like phone number saved with name
+git remote add origin https://github.com/kbnewbee/all-about-git.git
 
+// to see list of all the urls attached to your local repo
+git remote -v
+
+// push changes to github repo
+// git push <dest url> <local src branch>
+git push origin master 
 
 
