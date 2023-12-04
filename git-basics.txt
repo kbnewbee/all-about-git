@@ -88,6 +88,14 @@ git reset --hard upstream/main
 // alternate way to fetch and reset - in a single command
 git pull upstream main
 
+// if you want to merge many commits into a single commit
+// rebase to the commit just below the commit you want to squash
+// -i is for interactive
+// choose pick or s - squash in the terminal
+// write a commit message
+git rebase -i <commit>
+
+
 
 
 
