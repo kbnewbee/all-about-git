@@ -36,7 +36,7 @@ git remote add origin https://github.com/kbnewbee/all-about-git.git
 git remote -v
 
 // push changes to github repo
-// git push <dest url> <local src branch>
+// git push <dest url name> <dest branch name>
 git push origin master 
 
 // create a new branch with name feature
@@ -44,6 +44,69 @@ git branch feature
 
 // to move to the feature branch
 git checkout feature
+
+// to merge changes in feature branch to master branch
+// ususally done with pull request
+git checkout master 
+git merge feature
+
+// if you want to delete recent commits
+// reset to the commit just below the commit that you want to remove
+git reset <commit>
+
+
+// fork a project
+git remote add upstream <url of the src of forked project>
+
+// this will show both origin and upstream urls
+// origin - personal
+// upstream - from where you have forked the project 
+git remote -v
+
+// open source convention
+// make a separate branch after forking a project
+git branch feature2
+git checkout feature2
+
+// make number of commits in feature2 branch 
+// make commit to origin, you cannot commit to upstream
+
+// create a pull request to the main project's main branch
+// one branch can only open one pull request
+
+// method 1
+// when upstream is ahead by some commits
+// fetch all the commits from upstream main branch
+git fetch --all --prune
+
+// checkout to main branch in your fork
+// sync with the main branch of the original project
+git reset --hard upstream/main
+// push the changes to your forked repo 
+
+// method 2
+// alternate way to fetch and reset - in a single command
+git pull upstream main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
